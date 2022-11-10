@@ -26,3 +26,9 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+      
+    - name Download Code
+      run wget https://github.com/yehudimikhael/devopstalk/releases/download/v1/talk
+      
+    - name Run Load Test
+      run ./talk
